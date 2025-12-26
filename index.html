@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System Exploration</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="canvas-container"></div>
+
+  <div id="ui-layer">
+    <!-- Landing Screen -->
+    <div id="landing-screen">
+      <h1>Explore the Cosmos</h1>
+      <p class="subtitle">An interactive 3D journey through our Solar System</p>
+      <button id="start-btn">Begin Journey</button>
+      <div id="loading">Initializing Simulation...</div>
+    </div>
+
+    <!-- HUD -->
+    <div id="hud">
+      <div class="hud-item">
+        <span class="label">System Status</span>
+        <span class="value">Active</span>
+      </div>
+    </div>
+
+    <!-- Info Panel -->
+    <div id="info-panel">
+      <div class="panel-header">
+        <h2 id="planet-name">Planet Name</h2>
+        <span id="planet-type" class="badge">Type</span>
+      </div>
+
+      <div class="panel-content">
+        <p id="planet-desc" class="description">Description goes here.</p>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="detail-label">Distance</span>
+            <span id="planet-distance" class="detail-value">0 km</span>
+          </div>
+          <div class="stat-item">
+            <span class="detail-label">Temperature</span>
+            <span id="planet-day" class="detail-value">0°C</span>
+          </div>
+          <div class="stat-item">
+            <span class="detail-label">Orbital Period</span>
+            <span id="planet-year" class="detail-value">0 days</span>
+          </div>
+          <div class="stat-item">
+            <span class="detail-label">Mass</span>
+            <span id="planet-temp" class="detail-value">0 kg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div id="controls">
+      <button id="reset-btn" class="control-btn" title="Reset View">
+        <span class="icon">↺</span> Reset
+      </button>
+      <button id="tour-btn" class="control-btn" title="Focus Earth">
+        <span class="icon">🌍</span> Earth
+      </button>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

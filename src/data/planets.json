@@ -1,0 +1,238 @@
+[
+    {
+        "id": "sun",
+        "name": "Sun",
+        "type": "star",
+        "radius": 30,
+        "distance": 0,
+        "orbitalPeriod": 0,
+        "rotationSpeed": 0.004,
+        "color": "0xffaa00",
+        "description": "The star at the center of our Solar System.",
+        "details": {
+            "radiusKm": 696000,
+            "massKg": "1.989 × 10^30",
+            "temperature": "5,500°C",
+            "composition": [
+                "Hydrogen",
+                "Helium"
+            ]
+        },
+        "visual": {
+            "emissive": "0xffff00",
+            "emissiveIntensity": 0.8
+        }
+    },
+    {
+        "id": "mercury",
+        "name": "Mercury",
+        "type": "terrestrial",
+        "radius": 3.8,
+        "distance": 90,
+        "orbitalPeriod": 87.97,
+        "rotationSpeed": 0.01,
+        "color": "0xcccccc",
+        "description": "The smallest planet in the Solar System and the closest to the Sun.",
+        "details": {
+            "radiusKm": 2440,
+            "massKg": "3.30 × 10^23",
+            "temperature": "430°C / -180°C",
+            "composition": [
+                "Iron core",
+                "Rocky mantle"
+            ]
+        }
+    },
+    {
+        "id": "venus",
+        "name": "Venus",
+        "type": "terrestrial",
+        "radius": 9.5,
+        "distance": 168,
+        "orbitalPeriod": 224.7,
+        "rotationSpeed": 0.005,
+        "color": "0xe3bb76",
+        "description": "The second planet from the Sun. It has a thick atmosphere.",
+        "details": {
+            "radiusKm": 6052,
+            "massKg": "4.87 × 10^24",
+            "temperature": "465°C",
+            "composition": [
+                "Carbon dioxide",
+                "Sulfuric acid clouds"
+            ]
+        },
+        "visual": {
+            "atmosphere": true,
+            "atmosphereColor": "0xffddaa",
+            "atmosphereOpacity": 0.6
+        }
+    },
+    {
+        "id": "earth",
+        "name": "Earth",
+        "type": "terrestrial",
+        "radius": 10,
+        "distance": 233,
+        "orbitalPeriod": 365.25,
+        "rotationSpeed": 0.02,
+        "color": "0x2233ff",
+        "description": "Our home planet. The only known planet to harbor life.",
+        "details": {
+            "radiusKm": 6371,
+            "massKg": "5.97 × 10^24",
+            "temperature": "-89°C to 54°C",
+            "composition": [
+                "Nitrogen",
+                "Oxygen",
+                "Water"
+            ]
+        },
+        "visual": {
+            "atmosphere": true,
+            "atmosphereColor": "0x4facfe",
+            "atmosphereOpacity": 0.4,
+            "clouds": true
+        },
+        "children": [
+            {
+                "name": "Moon",
+                "radius": 2.7,
+                "distance": 15,
+                "color": "0x888888",
+                "orbitSpeed": 0.05
+            }
+        ]
+    },
+    {
+        "id": "mars",
+        "name": "Mars",
+        "type": "terrestrial",
+        "radius": 5.3,
+        "distance": 355,
+        "orbitalPeriod": 686.97,
+        "rotationSpeed": 0.018,
+        "color": "0xff6600",
+        "description": "The Red Planet. Home to the largest volcano in the solar system.",
+        "details": {
+            "radiusKm": 3390,
+            "massKg": "6.42 × 10^23",
+            "temperature": "-125°C to 20°C",
+            "composition": [
+                "Iron oxide",
+                "Silicate rock"
+            ]
+        }
+    },
+    {
+        "id": "jupiter",
+        "name": "Jupiter",
+        "type": "gas_giant",
+        "radius": 60,
+        "distance": 600,
+        "orbitalPeriod": 4332,
+        "rotationSpeed": 0.04,
+        "color": "0xeedd88",
+        "description": "The largest planet in the Solar System.",
+        "details": {
+            "radiusKm": 69911,
+            "massKg": "1.90 × 10^27",
+            "temperature": "-110°C",
+            "composition": [
+                "Hydrogen",
+                "Helium"
+            ]
+        }
+    },
+    {
+        "id": "saturn",
+        "name": "Saturn",
+        "type": "gas_giant",
+        "radius": 50,
+        "distance": 850,
+        "orbitalPeriod": 10759,
+        "rotationSpeed": 0.038,
+        "color": "0xffdd88",
+        "description": "Adorned with a dazzling system of icy rings.",
+        "details": {
+            "radiusKm": 58232,
+            "massKg": "5.68 × 10^26",
+            "temperature": "-140°C",
+            "composition": [
+                "Hydrogen",
+                "Helium"
+            ]
+        },
+        "visual": {
+            "rings": true,
+            "ringColor": "0xcccccc",
+            "ringInnerRadius": 1.4,
+            "ringOuterRadius": 2.2
+        }
+    },
+    {
+        "id": "uranus",
+        "name": "Uranus",
+        "type": "ice_giant",
+        "radius": 25,
+        "distance": 1100,
+        "orbitalPeriod": 30687,
+        "rotationSpeed": 0.03,
+        "color": "0x4fd0e7",
+        "description": "An ice giant with a pale blue color. Rotates on its side.",
+        "details": {
+            "radiusKm": 25362,
+            "massKg": "8.68 × 10^25",
+            "temperature": "-195°C",
+            "composition": [
+                "Water",
+                "Methane",
+                "Ammonia"
+            ]
+        },
+        "visual": {
+            "tilt": 98
+        }
+    },
+    {
+        "id": "neptune",
+        "name": "Neptune",
+        "type": "ice_giant",
+        "radius": 24,
+        "distance": 1350,
+        "orbitalPeriod": 60190,
+        "rotationSpeed": 0.032,
+        "color": "0x4169e1",
+        "description": "The most distant major planet orbiting our Sun.",
+        "details": {
+            "radiusKm": 24622,
+            "massKg": "1.02 × 10^26",
+            "temperature": "-200°C",
+            "composition": [
+                "Water",
+                "Methane",
+                "Ammonia"
+            ]
+        }
+    },
+    {
+        "id": "pluto",
+        "name": "Pluto",
+        "type": "dwarf_planet",
+        "radius": 1.85,
+        "distance": 1600,
+        "orbitalPeriod": 90560,
+        "rotationSpeed": 0.001,
+        "color": "0xaaaaaa",
+        "description": "A dwarf planet in the Kuiper belt.",
+        "details": {
+            "radiusKm": 1188,
+            "massKg": "1.30 × 10^22",
+            "temperature": "-225°C",
+            "composition": [
+                "Nitrogen ice",
+                "Rock"
+            ]
+        }
+    }
+]
